@@ -71,8 +71,8 @@ class FacebookPublisher:
         image_url = post.get("image_url")
 
         urgent   = "🔴 عاجل\n\n" if priority >= 9 else ""
-        cat_line = f"📂 {category}\n\n" if category else ""
-        message  = f"{urgent}📰 {title}\n\n{cat_line}{content}\n\n🔗 {url}"
+        #cat_line = f"📂 {category}\n\n" if category else ""
+        message  = f"{urgent}📰 {title}\n\n{content}\n\n🔗 {url}"
 
         try:
             if image_url:
